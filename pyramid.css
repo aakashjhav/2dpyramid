@@ -1,0 +1,116 @@
+ body{
+background-color: black;
+font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    perspective: 090em;
+    perspective-origin: 070% 00%;
+     --distance:200px;
+     --xyz:090px;
+    
+
+}
+
+
+.scene{
+    position: relative;
+    transform-style: preserve-3d;
+    animation: ScreenRotate 50s  infinite linear;
+    height: 100vh;
+/*    animation-play-state: paused;*/
+}
+
+
+
+@keyframes ScreenRotate{
+    
+    to {
+        transform: rotateY(360deg);
+    }
+    
+    
+}
+
+.floor{
+    position: absolute;
+    height: 015em;
+    width: 020em;
+    top: 060%;
+    background-image: linear-gradient( 45deg , #f55a08 10%,  blue 60% );
+    transform:  translate(-050% ,-50%) rotateX(090deg);    
+}
+
+/*Green*/
+.side1{
+    
+    height:000px;
+    width:000px;
+    border-left: 0230px solid transparent;
+    border-top: 085px solid transparent;
+    border-bottom: 230px solid rgb(0, 128, 0);
+    border-right: 230px solid transparent;
+    position: absolute;
+    transform: translatez( calc(91px - 20px))  rotateX(calc(050deg + 022deg));
+    box-shadow:  inset -8px -8px 15px 20px rgba(0,0,0,0.36);
+    
+    
+}
+
+
+
+/* Yellow  */
+.side2{
+    
+    height:000px;
+    width:000px;
+    border-left: 0230px solid transparent;
+    border-top: 085px solid transparent;
+    border-bottom: 230px solid rgb(201, 195, 52);
+    border-right: 230px solid transparent;
+    position: absolute;
+    transform: rotateY(-90deg) translateZ(calc(91px - 24px)) rotateX(calc(050deg + 22deg) );
+    box-shadow:  inset -8px -8px 15px 20px rgba(0,0,0,0.36);
+}
+
+
+/* orange */
+.side4{
+    
+    
+        height:000px;
+    width:000px;
+    border-left: 0230px solid transparent;
+    border-top: 085px solid transparent;
+    border-bottom: 230px solid rgb(201, 109, 52);
+    border-right: 230px solid transparent;
+    position: absolute;
+    transform: rotateY(180deg) translateZ(71px) rotateX(072deg);
+    box-shadow: inset -8px -8px 15px 20px rgba(0,0,0,0.36);
+}
+
+
+
+
+
+
+/* grey  */
+.side3{
+    
+    height:000px;
+    width:000px;
+    border-left: 0230px solid transparent;
+    border-top: 085px solid transparent;
+    border-bottom: 230px solid rgb(74, 75, 109);
+    border-right: 230px solid transparent;
+    position: absolute;
+    transform: rotateY(90deg) translateZ(71px) rotateX(072deg);
+    box-shadow:  inset -8px -8px 15px 20px rgba(0,0,0,0.36);
+
+    
+/*     transform: rotateY(-90deg) translatez(01em) rotateZ(0deg) rotateX(040deg) translateY(-010px);*/
+    
+}
+
+
+
